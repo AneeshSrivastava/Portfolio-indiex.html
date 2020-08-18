@@ -4,11 +4,15 @@
     <title>Aneesh Srivastava-Portfolio</title>
     <link rel="icon" type="image/png" href="Images/My Logo.png">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="main.js"></script>
 </head>
 <body>
 <section id="nav-bar">
@@ -29,7 +33,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#about-me">ABOUT ME</a>
             </li>
-              <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="#social-media">SOCIAL</a>
             </li>
             <li class="nav-item">
@@ -57,11 +61,11 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <img src="Images/Office Art.png" class="img-fluid">
+                <img src="Images/My pic 2.jpg" class="img-fluid banner-pic"> 
             </div>
         </div>
     </div>
-    <img src="Images/Wave.png" class="bottom-img">
+    <img src="Images/Wave2.png" class="bottom-img">
 </section>
 
 
@@ -70,29 +74,71 @@
     <div class="container text-center">
       <h1 class="title">WHAT ARE MY SKILLS?</h1>
       <div class="row">
-        <div class="col-md-3 services">
-          <img src="Images/Adobe Logo.png" class="services-img">
-          <h4>Premier Pro</h4>
-          <p>Learned video editing through youtube and earned enough knowledge to start my freelancing career in video editing</p>
+        <div class="col-md-3 services premier-front" onclick="index_test.html" style="cursor: pointer;">
+          <img src="Images/HTML & CSS logo.png" class="services-img">
+          <h4>HTML & CSS</h4>
+          <p>This is that one language in which I can say that I am confidant enough to answer any question but also 
+            curious enough to learn something new everyday.
+          </p>
         </div>
-        <div class="col-md-3 services">
-          <img src="Images/Resolve Logo.png" class="services-img">
-          <h4>Davinci Resolve</h4>
-          <p>Learned video editing through youtube and earned enough knowledge to start my freelancing career in video editing</p>
+        <div class="col-md-3 services java-script-front">
+          <img src="Images/JS logo.png" class="services-img">
+          <h4>JAVA SCRIPT</h4>
+          <p>Stil learning ,but I know various commands and would love to explore it further.  </p>
         </div>
-        <div class="col-md-3 services">
-          <img src="Images/YT Logo.png" class="services-img">
-          <h4>Youtube</h4>
-          <p>I have a gaming channel with the name of dungeon where I upload my gameplays.</p>
+
+        <div class="col-md-3 services SQL-front">
+          <img src="Images/PHP & SQL Logo.png" class="services-img">
+          <h4>PHP & SQL</h4>
+          <p>The back-end part which I have been familiar with for a long time. Need some polish this this will
+            be one of my top skills.
+          </p>
         </div>
-        <div class="col-md-3 services">
-          <img src="Images/VS code Logo.png" class="services-img">
-          <h4>Coding</h4>
-          <p>I use VS code editor to do coding for web devlopment and I feel very comfortable in it.</p>
+
+        <div class="col-md-3 services java-front">
+          <img src="Images/JAVA Logo.png" class="services-img">
+          <h4>JAVA core</h4>
+          <p>Design a whole GUI based on java in my training at Incapp which saved records and had a login 
+            window.
+          </p>
         </div>
+
       </div>
-      <div>
-        <button type="button" class="btn btn-primary">More Skills</button>
+
+
+      <div class="row">
+        <div class="col-md-3 services c-front" onclick="index_test.html" style="cursor: pointer;">
+          <img src="Images/C Logo.png" class="services-img">
+          <h4>C language</h4>
+          <p>First programming language that I ever learned and still the most usefull one. This is one of my 
+            top langauges too.
+          </p>
+        </div>
+        <div class="col-md-3 services cp-front">
+          <img src="Images/C++ Logo.png" class="services-img">
+          <h4>C++ Language</h4>
+          <p>The Object Oriented language that made coding much easier when compared to C. I know this language 
+            very well and can even talk in it.
+          </p>
+        </div>
+
+        <div class="col-md-3 services python-front">
+          <img src="Images/Python Logo.png" class="services-img">
+          <h4>Python</h4>
+          <p>The most famous and easiest language that seemed like a blessing from God when I first saw it. One 
+            of my strongholds that cannot be easly broken.
+          </p>
+        </div>
+
+        <div class="col-md-3 services more-front">
+          <img src="Images/Play button.png" class="services-img">
+          <h4>MORE COMING SOON</h4>
+          <p>I still have a lot to learn so I will take everything by one step at a time.</p>
+        </div>
+
+      </div>
+      <div><!-- 
+        <button class="btn btn-primary">More Skills</button> -->
       </div>
     </div>
 </section>
@@ -121,8 +167,8 @@
 
 <!------------------SOCIAL MEDIA SECTION------------------------->
 <section id="social-media">
-  <div class="container text-center">
-    <h1 class="title text-center">FIND ME ON SOCIAL MEDIA</h1>
+  <div class="container text-center social-class">
+    <h1 class="title text-center">FIND ME HERE</h1>
     <div class="social-icons">
       <a href="https://www.facebook.com/aneesh.srivastava.794" target="_blank"><img src="Images/facebook.png"></a>
       <a href="https:/www.linkedin.com/in/aneeshsrivastava/" target="_blank"><img src="Images/linkedin.png"></a>
@@ -155,5 +201,6 @@
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
+    
 </body>
 </html>
