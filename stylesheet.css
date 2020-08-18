@@ -16,11 +16,11 @@ body{
 }
 /* -----------------------Navigation Bar CSS-----------------------------*/
 .navbar{
-    background-image: linear-gradient(to right, #d64ceb,#5a0783);
+    background-image: linear-gradient(to right, #e37af3,#b02af3);
     padding: 0 !important;
 }
 .navbar-brand img{
-    height: 50px;
+    height: 40px;
     padding-left: 20px;
 }
 .navbar-nav li{
@@ -57,18 +57,21 @@ font-size: 30px !important;
 }
 .btn-cv{
     color: rgb(0, 0, 0) !important;
-    font-size: 20px !important;
+    font-size: 30px !important;
     font-weight: 600 !important;
     margin-top:30px;
-    padding: 12px 35px;
+    margin-bottom: 40px;
+    padding: 14px 35px;
     border: none;
     border-radius: 40px;
     background-image: linear-gradient(to right, #ffffff,#d47dff);
-    transition: all 0.6s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
     z-index: -4 !important;
     transform:scale(0.9);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22);
 }
 .btn-cv:hover{
+    color: white !important;
     background-image: linear-gradient(to right, #c421dd,#9532c7);
     box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22);
     transform: none;
@@ -76,35 +79,21 @@ font-size: 30px !important;
 .bottom-img{
     width: 100%;
 }
-
-
+.banner-pic{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.9),0 25px 32px rgba(0, 0, 0, 0.767);
+    border-radius: 20px;
+}
 /*---------------------------------------Services Section----------------------*/
 #services{
     padding: 100px 0;
+    background-color: #dee6ef  ;
 }
 .services-img {
-    width: 100px;
+    width: 180px;
     margin-top: 20px;
 }
-.services::before{
-    padding: 50px;
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22) !important;
-    z-index: -1;
-    opacity: 0 !important;
-    transform: scale(0.80);
-    transition: all 0.4s ease-in-out;
-    will-change: transform;
-}
-.services:hover:before{
-    opacity: 1 !important;
-    transform: none !important;
-    transition: all 0.4s ease-in-out;
+.services p{
+    font-family: Abel;
 }
 .services h4{
     padding: 8px;
@@ -157,6 +146,65 @@ font-size: 30px !important;
     box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22);
     transform: none;
 }
+.premier-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/skill\ bg.png");
+}
+
+ .java-script-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/JS\ BG.png");
+ }
+ .java-script-front img{
+     width: 120px;
+ }
+ .SQL-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/SQL\ BG.jpg");
+ }
+ .SQL-front img{
+     width: 240px;
+ }
+ .java-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/JAVA\ BG.jpg");
+ }
+ .java-front img{
+     width: 120px;
+ }
+
+
+
+ .c-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/SQL\ BG.jpg");
+ }
+ .cp-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/JAVA\ BG.jpg");
+ }
+ .python-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) ),url("Images/Office\ Art.png");
+ }
+ .more-front{
+    background:linear-gradient( rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.89) );
+ }
+
+
+
+ .services h4{
+    font-weight: 700;
+}
+
+ .services{
+    color: white !important;
+    background-size: cover;
+    background-position:center ;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22) !important;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.90);
+}
+.services:hover{
+    transform: none;
+}
+.rowtest{
+    transition: all 0.8s ease-in-out;
+}
+
 /*----------------------------About me section--------------------------*/
 #about-me{
     background: #f8f9fa;
@@ -171,24 +219,26 @@ font-size: 30px !important;
 }
 #about-me ul li{
     margin: 10px 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #about-me ul{
     margin-left: 40px;
 }
 #about-me ul li:hover{
-    margin: 10px 0;
     font-weight: 600;
     transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
 }
-/* -----------SOCIAL MEDIA SECTION----------*/
+/* ------------------------------------SOCIAL MEDIA SECTION------------------------------*/
 #social-media{
-    background: #f8f9fa;
     padding: 100px 0px;
 }
-
+.social-class{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 100px;
+}
 #social-media p{
     font-size: 36px;
     font-weight: 600;
@@ -196,14 +246,15 @@ font-size: 30px !important;
 }
 
 .social-icons img{
-    border-radius: 18px;
+    border-radius: 19px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.3),0 15px 12px rgba(0,0,0,0.22);
     align-content: center;
     width:60px;
-    transition: 0.6s;
+    transition: all 0.4s ease-in-out;
     margin: 10px 40px;
 }
 .social-icons a:hover img{
+    transform: scale(1.1);
     transform: translateY(-10px);
 }
 /*-----------------------FOOTER--------------------------*/
@@ -217,6 +268,7 @@ font-size: 30px !important;
 }
 .footer-box{
     padding: 20px;
+    padding-left: 100px !important;
 }
 .footer-box img{
     width:250px;
